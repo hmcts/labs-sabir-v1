@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "labs-sabir_v1"
+  description: Deploying a Java application
+  annotations:
+    # This must match folder-name/job-name in Jenkins.
+    jenkins.io/job-full-name: cft:HMCTS_labs/labs-sabir-v1
+    github.com/project-slug: 'hmcts/labs-sabir-v1'
+  tags:
+    - java
+  links:
+    - url: https://hmcts-reform.slack.com/app_redirect?channel=cloud-native
+      title: cloud-native on Slack
+      icon: chat
+spec:
+  type: service
+  system: labs
+  lifecycle: experimental
+  owner: dts_owners_sub_dcd-cnp-dev

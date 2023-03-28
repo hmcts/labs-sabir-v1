@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  sabir_v1:
+    build:
+      context: .
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+    image: hmctspublic.azurecr.io/labs/sabir_v1
+    ports:
+      - $SERVER_PORT:$SERVER_PORT
